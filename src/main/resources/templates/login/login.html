@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Login</title>
+    <link rel="stylesheet" th:href="@{/css/login/style.css}">
+</head>
+<body>
+    <div class="apresentacaoLogin">
+        <!-- Seção da esquerda com formulário -->
+        <div class="apresentacaoLogin__retangulo">
+            <div class="apresentacaoLogin__retangulo__telaLogin">
+                <p class="apresentacaoLogin__retangulo__telaLogin__textoLOGIN">LOGIN</p>
+
+                <form th:object="${usuario}" class="apresentacaoLogin__retangulo__telaLogin__formulario"
+                      th:action="@{/login}" method="POST">
+                    <label for="username">Usuário</label>
+                    <input class="apresentacaoLogin__retangulo__telaLogin__dadosUsuario"
+                           type="text" id="username" name="username"
+                           placeholder="Digite seu usuário" required>
+
+                    <label for="password">Senha</label>
+                    <input class="apresentacaoLogin__retangulo__telaLogin__dadosSenha"
+                           type="password" id="password" name="password"
+                           placeholder="Digite sua senha" required>
+
+                    <button class="apresentacaoLogin__retangulo__telaLogin__botaoEntrar"
+                    type="submit">
+                        ENTRAR
+                    </button>
+                </form>
+                <p class="apresentacaoLogin__retangulo__telaLogin__registro">
+                    Não tem uma conta? <a th:href="@{/cadastroUsuario/registrar}">Cadastre-se</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Seção da direita com logo -->
+        <div class="apresentacaoLogin__imagemLogin">
+            <img class="apresentacaoLogin__imagemLogin__logo"
+                 th:src="@{/img/logo_remove_fundo.png}" alt="Logo">
+        </div>
+    </div>
+</body>
+</html>

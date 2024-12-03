@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+}
+
+.apresentacaoLogin {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Estilo para o painel esquerdo */
+.apresentacaoLogin__retangulo {
+    background-color: #e4e4e4;
+    flex: 0 0 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 70px;
+    height: 1100px;
+    margin: 10px 0px 0px 0px;
+    margin-top: auto;
+    position: relative;
+
+}
+
+.apresentacaoLogin__retangulo__telaLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    gap: 70px;
+    margin-top: -220px;
+    margin-left: -300px;
+    position: absolute;
+}
+
+/*
+.apresentacaoLogin__retangulo__circulo {
+    background-color: #000000;
+    border-radius: 50%;
+    width: 100px;
+    height: 80px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+}
+*/
+
+.apresentacaoLogin__retangulo__telaLogin__textoLOGIN{
+    color: #000000;
+    font-family: "Acme", Helvetica;
+    font-size: 80px;
+    font-weight: 500;
+    width: 100%;
+    margin-left: 490px;
+}
+
+apresentacaoLogin__retangulo__telaLogin__formulario{
+    display: flex;
+    gap: 20px;
+}
+
+/* Estilos para os inputs */
+label {
+    align-self: flex-start;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 30px;
+    font-family: "Acme", Helvetica;
+    font-size: 25px;
+    margin-left: 290px;
+    margin-bottom: 50px;
+}
+
+input {
+    background-color: #ffffff;
+    width: 660px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    margin-left: 270px;
+    margin-top: 15px;
+}
+
+input::placeholder{
+    color: #000000;
+    font-size: 20px;
+    margin-left: 70px;
+}
+
+input:focus{
+    font-size: 20px;
+}
+
+/* Botão de login */
+.apresentacaoLogin__retangulo__telaLogin__botaoEntrar {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    width: 650px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: "Acme", Helvetica;
+    margin-left: 290px;
+}
+
+.apresentacaoLogin__retangulo__telaLogin__registro {
+    color: #000000;
+    font-family: "Acme", Helvetica;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 270px;
+}
+
+.apresentacaoLogin__retangulo__telaLogin__registro a {
+    color: #000000;
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold; /* Mantém a mesma aparência */
+}
+
+.apresentacaoLogin__retangulo__telaLogin__botaoEntrar:hover {
+    background-color: #333;
+}
+
+/* Estilo para o painel direito */
+.apresentacaoLogin__imagemLogin {
+    background-color: #000000;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apresentacaoLogin__imagemLogin__logo {
+    max-width: 800px;
+    height: 800px;
+}

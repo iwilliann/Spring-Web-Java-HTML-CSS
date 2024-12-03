@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Gráfico</title>
+    <script th:src="@{https://cdn.jsdelivr.net/npm/chart.js}"></script>
+    <link rel="stylesheet" th:href="@{/css/grafico/style.css}" />
+</head>
+<body>
+    <div class="container" style="display: flex; justify-content: center;
+                                  align-items: center; flex-direction: column;">
+        <h1>Distribuição por Gênero</h1>
+        <div class="chart-container" style="position: relative; width: 50%; max-width: 600px;">
+            <canvas id="graficoGenero"></canvas>
+        </div>
+        <a th:href="@{/login}" class="btn">Voltar para Página de Login</a>
+    </div>
+    <script th:src="@{/js/graficoGenero.js}"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.container {
+    text-align: center;
+}
+
+.chart-container {
+    width: 100%;
+    height: auto;
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+h1 {
+    font-family: "Acme", Helvetica;
+    font-size: 80px;
+    font-weight: 500;
+    width: 100%;
+}
+
+a {
+    font-family: "Acme", Helvetica;
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
